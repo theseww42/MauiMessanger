@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Messenger.Client.ViewModels"
+             xmlns:controls="clr-namespace:Messenger.Client.Views.Controls"
+             x:Class="Messenger.Client.Views.Pages.MessangerPage"
+             Title="MessangerPage"
+             x:DataType="vm:MessangerPageViewModel">
+
+    <ContentPage.BindingContext>
+        <vm:MessangerPageViewModel />
+    </ContentPage.BindingContext>
+
+
+    <!--// Messanger content //-->
+    <Grid ColumnDefinitions="60, 1, 280, *, 350">
+
+        <controls:NavigationControl />
+
+        <BoxView Grid.Column="1" Color="{StaticResource Gray100}"/>
+
+        <Grid Grid.Column="2">
+
+            <StackLayout>
+                <Entry />
+            </StackLayout>
+
+        </Grid>
+        
+        
+
+        
+
+    </Grid>
+
+</ContentPage>
